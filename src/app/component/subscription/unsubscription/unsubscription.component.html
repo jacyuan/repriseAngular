@@ -1,3 +1,12 @@
-<p>
-  unsubscription works!
-</p>
+<table class="table table-striped">
+  <tr *ngIf="loading">loading...</tr>
+  <tr *ngFor="let subscription of subscriptions">
+    <td>{{subscription.user_application_id}}</td>
+    <td>{{subscription.legacy_id}}</td>
+    <td>
+      <button class="btn btn-danger" (click)="deleteSubscription(subscription)">
+        <i class="fa fa-trash-o"></i>
+      </button>
+    </td>
+  </tr>
+</table>

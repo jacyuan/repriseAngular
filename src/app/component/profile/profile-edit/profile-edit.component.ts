@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Transition } from '@uirouter/core';
-import { PROFILE_CONSTANTS } from '../profile.constant.ts';
 
 @Component({
   selector: 'app-profile-edit',
@@ -8,11 +6,8 @@ import { PROFILE_CONSTANTS } from '../profile.constant.ts';
   styleUrls: ['./profile-edit.component.scss']
 })
 export class ProfileEditComponent implements OnInit {
-
-  constructor(private transition: Transition) { }
+  constructor() { }
 
   ngOnInit() {
-    const authId = this.transition.params()[PROFILE_CONSTANTS.AUTH_ID_URL_PARAM_NAME];
-    console.log(authId);
   }
 }
