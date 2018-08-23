@@ -127,5 +127,27 @@
       }
     }
   },
-  "defaultProject": "RepriseAngular"
+  "defaultProject": "RepriseAngular",
+  "schematics": {
+    "@schematics/angular": {
+      "class": {
+        "spec": false
+      },
+      "module": {
+        "spec": false
+      },
+      "service": {
+        "spec": false
+      },
+      "component": {
+        "spec": false
+      },
+      "pipe": {
+        "spec": false
+      },
+      "directive": {
+        "spec": false
+      }
+    }
+  }
 }
